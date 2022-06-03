@@ -1,0 +1,9 @@
+#galleryNavCard{
+    background-color: #e34242;
+    height: 300px;
+    width: 300px;
+    color: white;
+}
+.nav-card{
+    border-radius: 20px;
+}
