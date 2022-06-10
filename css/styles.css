@@ -1,9 +1,22 @@
-#galleryNavCard{
-    background-color: #e34242;
+.home-nav-card{
     height: 300px;
     width: 300px;
-    color: white;
-}
-.nav-card{
     border-radius: 20px;
+}
+
+#plane{
+    animation: plane 5s linear infinite;
+    position: relative;
+}
+
+@keyframes plane {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 100px);
+    }
+    100% {
+        left: 0;
+    }
 }
