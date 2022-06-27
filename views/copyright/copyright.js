@@ -4,6 +4,18 @@ var data =
             "Can a creator of a copyrighted work object to having their work portrayed in a light that is harmful to them?",
             "Yes, you can defend yourself in court"
         ],
+        [
+            "Can a creator of a copyrighted work object to having their work portrayed in a light that is harmful to them?",
+            "Yes, you can defend yourself in court"
+        ],
+        [
+            "Can a creator of a copyrighted work object to having their work portrayed in a light that is harmful to them?",
+            "Yes, you can defend yourself in court"
+        ],
+        [
+            "Can a creator of a copyrighted work object to having their work portrayed in a light that is harmful to them?",
+            "Yes, you can defend yourself in court"
+        ],
     ]
 
 $( document ).ready(function() {
@@ -19,7 +31,7 @@ function loadData(){
         let question = data[i][0]
         let answer = data[i][1]
         let template = `
-             <div class="flip-card">
+             <div class="flip-card mb-4">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <div class="card">
@@ -42,25 +54,32 @@ function loadData(){
                 </div>
             </div>
         `
-        appendTemplate(template, lastRow)
+        lastRow = appendTemplate(template, lastRow);
     }
 }
 
 function appendTemplate(template, lastRow){
+    console.log(lastRow);
     let $templateElement = $(template);
     if (lastRow === 3){
-        $templateElement.appendTo("#row1");
+        $templateElement.appendTo("#row3");
         sizeCard($templateElement);
         return 1;
     }
     $templateElement.appendTo("#row" + lastRow);
     sizeCard($templateElement);
-    return lastRow++;
+    return ++lastRow;
 }
 
-function sizeCard($element){
-    console.log($element.find(".card")[0].css("background-color", "red"));
-    let maxHeight = Math.max($element.find(".card")[0].height(), $element.find(".card")[1].height());
-    $element.height(maxHeight);
+function sizeCard(element){
+    let heights = [];
+    for(let card of $(element).find(".card")){
+        heights.push($(card).height());
+    }
+    let maxHeight = Math.max(...heights);
+    $(element).height(maxHeight);
+    for(let card of $(element).find(".card")){
+        $(card).addClass("h-100");
+    }
 }
 

@@ -3,6 +3,8 @@
 }
 
 .flip-card-inner {
+    height: 100%;
+    width: 100%;
     position: relative;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -22,7 +24,4 @@
 
 .flip-card-back {
     transform: rotateY(180deg);
-}
-
-.card{
 }
