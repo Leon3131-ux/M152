@@ -1,21 +1,41 @@
-var data =
+const data =
     [
         [
             "Can a creator of a copyrighted work object to having their work portrayed in a light that is harmful to them?",
             "Yes, you can defend yourself in court"
         ],
         [
-            "Can a creator of a copyrighted work object to having their work portrayed in a light that is harmful to them?",
-            "Yes, you can defend yourself in court"
+            "Where does copyright stop?",
+            "Quotation rights, usage of images in a catalogue (Katalogbildfreiheit), orphan works"
         ],
         [
-            "Can a creator of a copyrighted work object to having their work portrayed in a light that is harmful to them?",
-            "Yes, you can defend yourself in court"
+            "Can the copyright of a work be transferred via a testament?",
+            "Yes it can"
         ],
         [
-            "Can a creator of a copyrighted work object to having their work portrayed in a light that is harmful to them?",
-            "Yes, you can defend yourself in court"
+            "When does something count as copyright protected?",
+            "When a work is created. It does not need to be written down in a register"
         ],
+        [
+            "What's the main goal of a counterfeit?",
+            "To profit off the reputation of the original"
+        ],
+        [
+            "How can you defend yourself if your copyright is infringed on the internet?",
+            "You can contact the hosting provider of the website. They then take the necessary steps to ensure your copyright is secured"
+        ],
+        [
+            "What information needs to be noted in the imprint?",
+            "Full name, postal address or domicile, email address"
+        ],
+        [
+            "Do people that appear in an image that you took need to be asked for permission before the image is published?",
+            "Yes, you need their consent"
+        ],
+        [
+            "Can a domain name be anything you want?",
+            "No, the names of well known people, company names or city and municipality names can't be contained in a domain name"
+        ]
     ]
 
 $( document ).ready(function() {
