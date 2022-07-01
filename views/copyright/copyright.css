@@ -1,5 +1,6 @@
 .flip-card {
     perspective: 1000px;
+    height: 120px;
 }
 
 .flip-card-inner {
@@ -24,4 +25,8 @@
 
 .flip-card-back {
     transform: rotateY(180deg);
+}
+
+.card{
+    height: 100%;
 }

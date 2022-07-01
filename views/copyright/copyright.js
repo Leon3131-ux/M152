@@ -83,23 +83,9 @@ function appendTemplate(template, lastRow){
     let $templateElement = $(template);
     if (lastRow === 3){
         $templateElement.appendTo("#row3");
-        sizeCard($templateElement);
         return 1;
     }
     $templateElement.appendTo("#row" + lastRow);
-    sizeCard($templateElement);
     return ++lastRow;
-}
-
-function sizeCard(element){
-    let heights = [];
-    for(let card of $(element).find(".card")){
-        heights.push($(card).height());
-    }
-    let maxHeight = Math.max(...heights);
-    $(element).height(maxHeight);
-    for(let card of $(element).find(".card")){
-        $(card).addClass("h-100");
-    }
 }
 
