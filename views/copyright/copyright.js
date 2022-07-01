@@ -35,6 +35,34 @@ const data =
         [
             "Can a domain name be anything you want?",
             "No, the names of well known people, company names or city and municipality names can't be contained in a domain name"
+        ],
+        [
+            "Who is the holder of copyright?",
+            "It’s the owner of the copyright."
+        ],
+        [
+            "Can copyright be transferred?",
+            "Copyrights are like properties and are treated as such, meaning it can be transferred."
+        ],
+        [
+            "Can data be copyrighted?",
+            "Data itself cannot be copyrighted since they are facts. Only under certain conditions the DB can be copyrighted."
+        ],
+        [
+            "Under what condition?",
+            "The data must be in a DB and the arrangement of data must be sufficiently creative or original to be copyrighted."
+        ],
+        [
+            "Is Open-Source still consider a copyright?",
+            "Yes, it is, the open-source has been given for use for other people by the copyright owner of the open-source."
+        ],
+        [
+            "How do you become the copyright holder?",
+            "After creating something, you are automatically the owner of the copyright. E.G. Writing new code. If you invented something new, you could also patent it, so no one else can sell the same exact thing."
+        ],
+        [
+            "Can you defend your copyright?",
+            "Yes, after the unlawful use of you copyright by another party you can demand that your copyright need to be observed in civil and criminal proceedings."
         ]
     ]
 
