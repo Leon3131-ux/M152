@@ -3,7 +3,6 @@ $( document ).ready(function() {
         $("#galleryLink").attr("aria-current", "true").addClass("active");
     });
     $(".click-icon-wrapper").click(function () {
-        console.log("click");
         if($(this).children(".click-icon").hasClass("fa-chevron-down")){
             $(this).children(".click-icon").removeClass("fa-chevron-down").addClass("fa-chevron-up");
         }else{
