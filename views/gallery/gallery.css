@@ -1,0 +1,13 @@
+.click-icon{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.click-icon:hover{
+    background-color: var(--bs-gray-300);
+}
