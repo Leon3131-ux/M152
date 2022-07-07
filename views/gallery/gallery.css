@@ -11,3 +11,9 @@
 .click-icon:hover{
     background-color: var(--bs-gray-300);
 }
+.card-footer{
+    border-top: var(--bs-card-border-width) solid var(--bs-card-border-color) !important;
+}
+.list-group{
+    border-bottom: 0 !important;
+}
