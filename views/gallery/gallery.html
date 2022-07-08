@@ -19,8 +19,10 @@
 <body>
     <div id="navbar" class="mb-3"></div>
     <div class="container">
-        <h4 class="text-center">Image Formats</h4>
-        <div class="row">
+        <div class="row mb-5">
+            <div class="col-12 mb-2">
+                <h4 class="text-center">Image Formats</h4>
+            </div>
             <div class="col">
                 <div class="card-group">
                     <div class="card">
@@ -28,12 +30,12 @@
                         <div class="card-body">
                             <h5 class="card-title">JPG</h5>
                         </div>
-                        <ul class="list-group list-group-flush collapse multi-collapse">
+                        <ul class="list-group list-group-flush collapse collapse-images">
                             <li class="list-group-item image-list-text">JPG stands for “Joint Photographic Experts Group”, jpg is mostly used for product photos, human portraits, and other images where the color variances are important. JPG uses a compression method that removes colors that are visible with the human eye and through that decreases the file size.<br><br></li>
                             <li class="list-group-item image-list-size">Size: 16.7MB</li>
                         </ul>
                         <div class="card-footer">
-                            <span class="click-icon-wrapper" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multi-collapse">
+                            <span class="click-icon-wrapper" data-bs-toggle="collapse" data-bs-target=".collapse-images" aria-expanded="false" aria-controls="collapse-images">
                                 <i class="click-icon fa-solid fa-chevron-down"></i>
                             </span>
                         </div>
@@ -43,12 +45,12 @@
                         <div class="card-body">
                             <h5 class="card-title">PNG</h5>
                         </div>
-                        <ul class="list-group list-group-flush collapse multi-collapse">
+                        <ul class="list-group list-group-flush collapse collapse-images">
                             <li class="list-group-item image-list-text">PNG or “Portable Network Graphics” is one of the most common image formats if not the most common. It can display a wider range of colors. Due to the nature of this format, transparency is supported, and user can choose the degree. This means, that PNG is used when people are handling images that have transparency or if transparency is to be added.</li>
                             <li class="list-group-item image-list-size">Size: 37.2MB</li>
                         </ul>
                         <div class="card-footer text-end">
-                            <span class="click-icon-wrapper invisible" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multi-collapse">
+                            <span class="click-icon-wrapper invisible" data-bs-toggle="collapse" data-bs-target=".collapse-images" aria-expanded="false" aria-controls="collapse-images">
                                 <i class="click-icon fa-solid fa-chevron-down"></i>
                             </span>
                         </div>
@@ -58,12 +60,12 @@
                         <div class="card-body">
                             <h5 class="card-title">GIF</h5>
                         </div>
-                        <ul class="list-group list-group-flush collapse multi-collapse">
+                        <ul class="list-group list-group-flush collapse collapse-images">
                             <li class="list-group-item image-list-text">At least we are to the GIF or also known as “Graphics Interchange Format”. GIF can display a sequence of images, that allows it to look like a short video. A downside to GIF is that the color is reduced to a range of 256, so small differences of the original pictures cannot be distinguished.<br><br></li>
                             <li class="list-group-item image-list-size">Size: 15.2MB</li>
                         </ul>
                         <div class="card-footer text-end">
-                            <span class="click-icon-wrapper invisible" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multi-collapse">
+                            <span class="click-icon-wrapper invisible" data-bs-toggle="collapse" data-bs-target=".collapse-images" aria-expanded="false" aria-controls="collapse-images">
                                 <i class="click-icon fa-solid fa-chevron-down"></i>
                             </span>
                         </div>
@@ -71,7 +73,169 @@
                 </div>
             </div>
         </div>
-        <h4 class="text-center">Video Formats</h4>
+        <div class="row mb-5">
+            <div class="col-12 mb-2">
+                <h4 class="text-center">Video Formats</h4>
+            </div>
+            <div class="col">
+                <div class="card-group">
+                    <div class="card">
+                        <video controls>
+                            <source src="assets/video.MOV" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">MOV</h5>
+                        </div>
+                        <ul class="list-group list-group-flush collapse collapse-video">
+                            <li class="list-group-item image-list-text">“QuickTime Movie” is almost the opposite of MP4 regarding quality. It stores higher quality video, audio and effects. The downside is that the file tends to be quite large compared to other ones.<br><br><br></li>
+                            <li class="list-group-item image-list-size">
+                                Advantages
+                                <ul>
+                                    <li>Higher Quality off audio and video</li>
+                                    <li class="invisible"></li>
+                                    <li class="invisible"></li>
+                                </ul>
+                                Disadvantages
+                                <ul>
+                                    <li>File is larger than other ones</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item image-list-size">Size: 28.1MB</li>
+                        </ul>
+                        <div class="card-footer">
+                            <span class="click-icon-wrapper" data-bs-toggle="collapse" data-bs-target=".collapse-video" aria-expanded="false" aria-controls="collapse-video">
+                                <i class="click-icon fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <video controls>
+                            <source src="assets/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">MP4</h5>
+                        </div>
+                        <ul class="list-group list-group-flush collapse collapse-video">
+                            <li class="list-group-item image-list-text">MPEG-4 is the most common used video format. The name arrives from the algorithm it uses called MPEG-4, this algorithm stores video and audio files and offers a lower definition. MP4 is used to make short videos that don’t need a high grade of quality, perfect for YouTube, Twitter, Instagram and other applications like that.</li>
+                            <li class="list-group-item image-list-size">
+                                Advantages
+                                <ul>
+                                    <li>Relatively small file size compared to most formats</li>
+                                    <li>Easy use to make short videos</li>
+                                    <li class="invisible"></li>
+                                </ul>
+                                Disadvantages
+                                <ul>
+                                    <li>Low quality</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item image-list-size">Size: 18.9MB</li>
+                        </ul>
+                        <div class="card-footer text-end">
+                            <span class="click-icon-wrapper invisible" data-bs-toggle="collapse" data-bs-target=".collapse-video" aria-expanded="false" aria-controls="collapse-video">
+                                <i class="click-icon fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <video controls>
+                            <source src="assets/video.webm" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">WebM</h5>
+                        </div>
+                        <ul class="list-group list-group-flush collapse collapse-video">
+                            <li class="list-group-item image-list-text">Webm is an all-around good video file format, it has great quality of sounds and videos without compromising performance. Webm is specifically design for the internet, due to that it has a higher compression ratio to other video formats, such as MP4, that also allows it, to be smaller than a MP4 video.</li>
+                            <li class="list-group-item image-list-size">
+                                Advantages
+                                <ul>
+                                    <li>Good video and audio quality</li>
+                                    <li>Small file sizes</li>
+                                    <li>Good performance for even low-end machines</li>
+                                </ul>
+                                Disadvantages
+                                <ul>
+                                    <li>Not supported in Safari and Internet Explorer</li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item image-list-size">Size: 17.3MB</li>
+                        </ul>
+                        <div class="card-footer text-end">
+                            <span class="click-icon-wrapper invisible" data-bs-toggle="collapse" data-bs-target=".collapse-video" aria-expanded="false" aria-controls="collapse-video">
+                                <i class="click-icon fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-12 mb-2">
+                <h4 class="text-center">Audio Formats</h4>
+            </div>
+            <div class="col">
+                <div class="card-group">
+
+                    <div class="card">
+                        <audio controls>
+                            <source src="assets/audio.wav" type="audio/ogg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <div class="card-body">
+                            <h5 class="card-title">WAV</h5>
+                        </div>
+                        <ul class="list-group list-group-flush collapse collapse-audio">
+                            <li class="list-group-item image-list-text">Waveform audio files (also called WAV files) are one of the more popular digital audio formats and a gold standard in studio recording. WAV was one of the first digital audio formats, and quickly became a staple across all platforms. Despite decades of progress, it still maintains its position as one of the world’s leading pro audio formats. (07.01.2022, <a href="https://www.izotope.com/en/learn/whats-the-difference-between-file-formats.html">https://www.izotope.com/en/learn/whats-the-difference-between-file-formats.html</a>)</li>
+                            <li class="list-group-item image-list-size">Size: 412KB</li>
+                        </ul>
+                        <div class="card-footer">
+                            <span class="click-icon-wrapper" data-bs-toggle="collapse" data-bs-target=".collapse-audio" aria-expanded="false" aria-controls="collapse-audio">
+                                <i class="click-icon fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <audio controls>
+                            <source src="assets/audio.wav" type="audio/ogg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <div class="card-body">
+                            <h5 class="card-title">MP3</h5>
+                        </div>
+                        <ul class="list-group list-group-flush collapse collapse-audio">
+                            <li class="list-group-item image-list-text">Uncompressed audio formats like WAV and AIFF provide gorgeous sound quality, but at the cost of high file size. With the boom of internet file-sharing in the mid-90s, people quickly realized sending uncompressed files over dial-up connections was impractical—and oftentimes impossible. Which is why MP3s (MPEG-2 Audio Layer III) were born. (07.01.2022, <a href="https://www.izotope.com/en/learn/whats-the-difference-between-file-formats.html">https://www.izotope.com/en/learn/whats-the-difference-between-file-formats.html</a>)</li>
+                            <li class="list-group-item image-list-size">Size: 72KB</li>
+                        </ul>
+                        <div class="card-footer">
+                            <span class="click-icon-wrapper invisible" data-bs-toggle="collapse" data-bs-target=".collapse-audio" aria-expanded="false" aria-controls="collapse-audio">
+                                <i class="click-icon fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <audio controls>
+                            <source src="assets/audio.ogg" type="audio/ogg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <div class="card-body">
+                            <h5 class="card-title">OGG</h5>
+                        </div>
+                        <ul class="list-group list-group-flush collapse collapse-audio">
+                            <li class="list-group-item image-list-text">OGA is the lesser known and used file format of Ogg Vorbis. Usually these audio files use the OGG format. OGA files can use different audio codecs like Ogg FLAC, Ghost, OggPCM or less recommended codecs like Ogg Vorbis and Speex.</li>
+                            <li class="list-group-item image-list-size">Size: 40KB</li>
+                        </ul>
+                        <div class="card-footer">
+                            <span class="click-icon-wrapper invisible" data-bs-toggle="collapse" data-bs-target=".collapse-audio" aria-expanded="false" aria-controls="collapse-audio">
+                                <i class="click-icon fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
