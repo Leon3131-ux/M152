@@ -58,7 +58,7 @@ const data =
         ],
         [
             "How do you become the copyright holder?",
-            "After creating something, you are automatically the owner of the copyright. E.G. Writing new code. If you invented something new, you could also patent it, so no one else can sell the same exact thing."
+            "After creating something, you are automatically the owner of the copyright. E.G. Writing new code. If you invented something new, you could also patent it."
         ],
         [
             "Can you defend your copyright?",
