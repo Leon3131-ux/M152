@@ -4,5 +4,6 @@ $( document ).ready(function() {
     });
 });
 function updateText(){
-
+    $("#outputOne").text($("#firstInput").val());
+    $("#outputTwo").text($("#secondInput").val());
 }

@@ -17,9 +17,9 @@
 </head>
 <body>
     <div id="navbar" class="mb-3"></div>
-    <div class="container-fluid">
+    <div class="container">
         <h4>Form for Selenium tests</h4>
-        <form>
+        <form class="mb-3" onsubmit="updateText(); return false">
             <div class="mb-3">
                 <label class="form-label">First Input</label>
                 <input class="form-control" id="firstInput">
@@ -28,8 +28,10 @@
                 <label class="form-label">Second Input</label>
                 <input class="form-control" id="secondInput">
             </div>
-            <button class="btn btn-primary" onclick="updateText()">Submit</button>
+            <button role="button" class="btn btn-primary">Submit</button>
         </form>
+        <p class="text-center" id="outputOne"></p>
+        <p class="text-center" id="outputTwo"></p>
     </div>
 </body>
 </html>
